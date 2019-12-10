@@ -5,7 +5,7 @@
 //  Created by Eneko Alonso on 3/3/18.
 //
 
-import Utility
+import SPMUtility
 import Basic
 import Command
 import SolutionTester
