@@ -56,7 +56,7 @@ struct TestRunner {
     }
 
     private func executeTests(username: String) throws {
-        let process = Basic.Process(arguments: ["swift", "run", username], redirectOutput: false)
+        let process = Basic.Process(arguments: ["swift", "run", username], outputRedirection: .none)
         try process.launch()
         let result = try process.waitUntilExit()
         switch result.exitStatus {
