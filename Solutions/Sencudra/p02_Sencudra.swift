@@ -8,7 +8,7 @@ extension List {
     /// - author: Vlad Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
     public var penultimate: T? {
-        guard let next = nextItem else {
+        guard let _ = nextItem else {
             return nil
         }
         return nextItem?.penultimate ?? value
