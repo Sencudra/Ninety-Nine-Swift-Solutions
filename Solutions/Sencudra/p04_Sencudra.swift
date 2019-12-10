@@ -3,7 +3,7 @@ import NinetyNineSwiftProblems
 
 extension List {
 
-    /// P 04 (*) Find the number of elements of a linked list.
+    /// P04 (*) Find the number of elements of a linked list.
     /// - returns: Number of elements of a linked list.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
