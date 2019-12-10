@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Utility
+import SPMUtility
 import Basic
 
 public protocol Command {

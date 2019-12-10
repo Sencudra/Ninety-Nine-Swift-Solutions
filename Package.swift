@@ -17,15 +17,15 @@ let packageDependencies: [PackageDescription.Package.Dependency] = [
 ]
 
 let targetDependencies: [Target.Dependency] = [
-	"Command", "NinetyNineSwiftProblems", "SolutionTester", "Utility", "Logger"
+	"Command", "NinetyNineSwiftProblems", "SolutionTester", "SPMUtility", "Logger"
 ]
 
 let defaultTargets: [Target] = [
-    .target(name: "Command", dependencies: ["Utility", "Logger"]),
+    .target(name: "Command", dependencies: ["SPMUtility", "Logger"]),
     .target(name: "NinetyNineSwiftProblems", dependencies: []),
-    .target(name: "SolutionTester", dependencies: ["Command", "NinetyNineSwiftProblems", "Rainbow", "Utility"]),
+    .target(name: "SolutionTester", dependencies: ["Command", "NinetyNineSwiftProblems", "Rainbow", "SPMUtility"]),
     .target(name: "runner", dependencies: targetDependencies),
-    .target(name: "setup", dependencies: ["Command", "NinetyNineSwiftProblems", "SolutionTester", "Rainbow", "Utility"]),
+    .target(name: "setup", dependencies: ["Command", "NinetyNineSwiftProblems", "SolutionTester", "Rainbow", "SPMUtility"]),
     .target(name: "test", dependencies: targetDependencies),
 ]
 
