@@ -10,12 +10,12 @@ extension List where T: Equatable {
     func encode() -> List<(Int, T)> {
         var oldHead = self.pack()
         let head = List<(Int, T)>((oldHead.value.length,
-                         oldHead.value.value))
+                                   oldHead.value.value))
         var tail = head
         
         while let next = oldHead.nextItem {
             let newElement = List<(Int, T)>((next.value.length,
-                                   next.value.value))
+                                             next.value.value))
             tail.nextItem = newElement
             tail = newElement
             oldHead = next
