@@ -7,7 +7,7 @@ extension List {
     /// - returns: Returns the list without N randomly selected elements.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n*m)
-    func randomSelect(amount: Int) -> List {
+    public func randomSelect(amount: Int) -> List {
         let index = Int.random(in: 0..<self.length)
         let (newHead, value) = self.remove(at: index)
         let head = List(value!)
