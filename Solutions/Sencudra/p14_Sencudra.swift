@@ -7,7 +7,7 @@ extension List where T: Equatable {
     /// - returns: Returns the list with duplicated values
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func duplicate() -> List {
+    public func duplicate() -> List {
         var oldHead = self
         let head = List(oldHead.value)
         let newElement = List(oldHead.value)

@@ -7,7 +7,7 @@ extension List where T: Equatable {
     /// - returns: Returns a copy of a list without duplicates.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func compress() -> List {
+    public func compress() -> List {
         let head = List(value)
         var tail = head
         var oldHead = self

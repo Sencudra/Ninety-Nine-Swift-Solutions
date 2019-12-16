@@ -7,7 +7,7 @@ extension List where T: Equatable {
     /// - returns: Returns modified run-length encoded list where only elements with duplicates are transferred as (N, E) terms.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func encodeDirect() -> List<(Int, T)> {
+    public func encodeDirect() -> List<(Int, T)> {
         var oldHead = self
         let head = List<(Int, T)>((1, oldHead.value))
         var tail = head

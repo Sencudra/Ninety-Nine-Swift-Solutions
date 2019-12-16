@@ -7,7 +7,7 @@ extension List {
     /// - returns: Returns a tuple with two parts of a linked list splited at index Nth
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func split(at index: Int) -> (left: List?, right: List?) {
+    public func split(at index: Int) -> (left: List?, right: List?) {
         var oldHead = self
         let firstElement = List(oldHead.value)
         let headOne = index == 0 ? nil : firstElement

@@ -7,7 +7,7 @@ extension List {
     /// - returns: Returns decoded List
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func decode() -> List<String> {
+    public func decode() -> List<String> {
         var oldHead = self
         guard let (count, char) = oldHead.value as? (Int, String) else { return List<String>("") }
         let head = List<String>(char)

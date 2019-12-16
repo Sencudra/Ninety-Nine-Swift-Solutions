@@ -7,7 +7,7 @@ extension List {
     /// - returns: Returnes a flattened copy of nested linked list structure.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func flatten() -> List {
+    public func flatten() -> List {
         var head: List
         var oldHead = self
         var newHead: List
@@ -33,7 +33,8 @@ extension List {
         return head
     }
     
-    var lastElement: List {
+    /// Returns last element of a list.
+    public var lastElement: List {
         return nextItem?.lastElement ?? self
     }
 

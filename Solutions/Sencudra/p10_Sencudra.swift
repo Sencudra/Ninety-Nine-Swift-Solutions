@@ -7,7 +7,7 @@ extension List where T: Equatable {
     /// - returns: Duplicates of elements are encoded as tuples (N, E) where N is the number of duplicates of the element E.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func encode() -> List<(Int, T)> {
+    public func encode() -> List<(Int, T)> {
         var oldHead = self.pack()
         let head = List<(Int, T)>((oldHead.value.length,
                                    oldHead.value.value))

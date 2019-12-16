@@ -7,7 +7,7 @@ extension List where T: Equatable {
     /// - returns: Returns a list with duplicates being placed into sub linked lists.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func pack() -> List<List<T>> {
+    public func pack() -> List<List<T>> {
         var subTail =  List(value)
         let head = List<List>(subTail)
         var tail = head

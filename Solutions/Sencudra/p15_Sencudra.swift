@@ -7,7 +7,7 @@ extension List {
     /// - returns: Returns the list with a given number of times duplicated values.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func duplicate(times: Int) -> List {
+    public func duplicate(times: Int) -> List {
         var oldHead = self
         let head = List(oldHead.value)
         var tail = head

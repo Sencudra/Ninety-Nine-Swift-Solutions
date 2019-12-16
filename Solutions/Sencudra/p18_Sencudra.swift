@@ -7,22 +7,22 @@ extension List {
     /// - returns: Returns the slice from a linked list.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func slice(from: Int, to: Int) -> List? {
-        guard from < to else { return nil }
+    public func slice(from start: Int, to end: Int) -> List? {
+        guard start < end else { return nil }
         var oldHead = self
         var counter = 0
         
-        while let next = oldHead.nextItem, counter < from {
+        while let next = oldHead.nextItem, counter < start {
             counter += 1
             oldHead = next
         }
         
-        guard counter == from else { return nil }
+        guard counter == start else { return nil }
         let head = List(oldHead.value)
         var tail = head
         counter += 1
         
-        while let next = oldHead.nextItem, counter < to {
+        while let next = oldHead.nextItem, counter < end {
             let newElement = List(next.value)
             tail.nextItem = newElement
             tail = newElement

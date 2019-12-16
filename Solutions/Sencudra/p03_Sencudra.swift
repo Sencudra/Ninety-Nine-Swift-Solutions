@@ -7,7 +7,7 @@ extension List {
     /// - returns: Returns Kth element of linked list or nil if element could not be found
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    subscript(_ index: Int) -> T? {
+    public subscript(_ index: Int) -> T? {
         return index == 0 ? value : nextItem?[index - 1]
     }
 

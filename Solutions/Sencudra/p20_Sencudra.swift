@@ -7,12 +7,12 @@ extension List {
     /// - returns: Returns the tuple with copy of linked list without Kth element and Kth element
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func remove(at: Int) -> (rest: List?, removed: T?) {
+    public func remove(at index: Int) -> (rest: List?, removed: T?) {
         var oldHead = self
         var dropValue: T? = nil
         var head: List
         
-        if at == 0 {
+        if index == 0 {
             guard let next = oldHead.nextItem else {
                 return (nil, oldHead.value)
             }
@@ -27,7 +27,7 @@ extension List {
         
         while let next = oldHead.nextItem {
             counter += 1
-            if at == counter {
+            if index == counter {
                 dropValue = next.value
             } else {
                 let newElement = List(next.value)

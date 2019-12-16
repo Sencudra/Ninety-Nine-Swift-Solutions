@@ -8,7 +8,7 @@ extension List {
     /// - returns: Returns copy of linked list with evey Nth element droped.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func drop(every: Int) -> List? {
+    public func drop(every: Int) -> List? {
         if every <= 1 { return nil }
         
         var oldHead = self

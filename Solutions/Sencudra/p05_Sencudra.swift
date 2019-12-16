@@ -7,7 +7,7 @@ extension List {
     /// - returns: Copy of reversed linked list
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    func reverse() -> List {
+    public func reverse() -> List {
         var newHead = List(value)
         var oldHead: List = self
         

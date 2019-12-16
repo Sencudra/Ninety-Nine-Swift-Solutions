@@ -7,7 +7,7 @@ extension List {
     /// - returns: Number of elements of a linked list.
     /// - author: Vladislav Tarasevich (vlad.tarasevich27@gmail.com)
     /// - complexity: O(n)
-    var length: Int {
+    public var length: Int {
         return (nextItem?.length ?? 0) + 1
     }
     
